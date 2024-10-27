@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - Saladas Deliciosas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #58a27c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4e8c68;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #3d7152;
+            border-radius: 5px;
+        }
+
+        .content {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #4e8c68;
+            margin-bottom: 20px;
+        }
+
+        .content form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .content form button {
+            background-color: #58a27c;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .content form button:hover {
+            background-color: #3d7152;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Finalizar Compra</h1>
+    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <div class="content">
+        <h2>Complete suas informações de pagamento</h2>
+        <form action="#" method="post">
+            <input type="text" name="nome" placeholder="Nome completo" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="numero_cartao" placeholder="Número do cartão de crédito" required>
+            <input type="text" name="codigo_seguranca" placeholder="Código de segurança (CVV)" required>
+            <input type="text" name="valor" placeholder="Valor da compra (ex: R$ 29,90)" required>
+            <input type="text" name="cupom" placeholder="Código do cupom (opcional)">
+            <button type="submit">Finalizar Compra</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Saladas Deliciosas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
